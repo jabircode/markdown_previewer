@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Water+Brush&display=swap');
+
+html, body {
+  background-color: #f4b41a;
+  
+}
+
+.preview {
+  background-color: #9fafca;
+  min-height: 100px;
+}
+
+img {
+    display: flex;
+    max-width: 30%;
+    margin: 2rem auto;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+#title {
+  font-family: 'water brush';
+    font-weight: 900;
+  font-size: 5rem;
+}
+
+#editor {
+  
+  margin: auto;
+  max-width: 80vh;
+  min-height: 10vh;
+}
+
+blockquote {
+    border-left: 3px solid #224b4b;
+    color: #377b7b;
+    padding-left: 5px;
+    margin-left: 25px;
+  }
+
+code {
+  background: white;
+  padding: 3px;
+}
+
+pre {
+    display: block;
+    overflow: auto;
+    background: white;
+    padding: 5px;
+    line-height: 1.2;
+  }
+
